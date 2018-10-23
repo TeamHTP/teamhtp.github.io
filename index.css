@@ -1,0 +1,13 @@
+body {
+  background-color: #f6f8fa;
+}
+
+#logo {
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  margin: auto;
+  margin-bottom: 3rem;
+}

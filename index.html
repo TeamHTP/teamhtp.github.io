@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TeamHTP</title>
+  <link rel="icon" href="./assets/htp.gif">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+  <div id="app" class="container">
+
+    <div id="logo">
+      <img src="./assets/htp.gif">
+    </div>
+
+    <div class="row">
+      <div class="col" v-for="ghUser in ghUsers">
+        <div class="card" style="width: 12rem;">
+          <img class="card-img-top" :src="ghUser.avatar_url" :alt="ghUser.login">
+          <div class="card-body">
+            <h5 class="card-title">{{ ghUser.login }}</h5>
+            <a :href="ghUser.html_url" class="btn btn-dark">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
