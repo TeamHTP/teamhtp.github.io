@@ -14,6 +14,11 @@
       <img src="./assets/htp.gif">
     </div>
 
+    <div class="heading">
+      <h6>TEAMHTP</h6><br/>
+      <a href="https://github.com/TeamHTP" class="btn btn-dark">GitHub</a>
+    </div>
+
     <div class="row">
       <div class="col" v-for="ghUser in ghUsers">
         <div class="card" style="width: 12rem;">
@@ -21,6 +26,19 @@
           <div class="card-body">
             <h5 class="card-title">{{ ghUser.login }}</h5>
             <a :href="ghUser.html_url" class="btn btn-dark">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading"><h6>ACCOLADES</h6></div>
+
+    <div class="row">
+      <div class="col" v-for="accolade in accolades">
+        <div class="card" style="width: 12rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{ accolade.title }}</h5>
+            <p>{{ accolade.desc }}</p>
           </div>
         </div>
       </div>

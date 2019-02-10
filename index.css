@@ -11,3 +11,9 @@ body {
   margin: auto;
   margin-bottom: 3rem;
 }
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+}

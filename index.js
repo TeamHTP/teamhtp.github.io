@@ -1,7 +1,15 @@
 var htpApp = new Vue({
   el: '#app',
   data: {
-    ghUsers: []
+    ghUsers: [],
+    accolades: [{
+      title: 'Hack K-State 2017',
+      desc: 'First Place: Aoide'
+    },
+    {
+      title: 'Hack K-State 2018',
+      desc: 'First Place: HERMES'
+    }]
   }
 });
 
