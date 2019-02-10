@@ -8,6 +8,7 @@ var htpApp = new Vue({
 var teamLogins = [
   'cata85',
   'dominictassio',
+  'marshingjay',
   'tma02'
 ];
 
